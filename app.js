@@ -50,6 +50,14 @@ function verificarIntento() {
             asignarTextoElemento("p", "El número secreto es mayor");
         }
         intentos++;
+
+        //NuevaCondicion
+        if (intentos > 5) {
+            asignarTextoElemento("p", "Has llegado al maximo de intentos permitidos, juega de nuevo!");
+            document.getElementById("reiniciar").removeAttribute("disabled");
+        } else {
+            limpiarCaja();
+        }
         limpiarCaja();
     }
     return;
