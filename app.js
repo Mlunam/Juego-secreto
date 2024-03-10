@@ -1,19 +1,3 @@
-//En esta parte hacemos uso del DOM para mandar a llamar objetos de HTML
-//Se utiliza el comando documet para hacer ferefencia al objeto y se asigna una variable
-//luego con variable mas inner nos lleva a poder modificar la etiqueta HTML
-
-/*let titulo = document.querySelector("h1");
-titulo.innerHTML = "Hola perros, juego del número secreto";*/
-
-//Para optimizar, la linea 5 y 6 la inserté a una función
-
-//let parrafo = document.querySelector("p");
-//parrafo.innerHTML = "Indica un numero de 1 a 10";
-
-//Anatomia de la función, declaración de la funcion
-//Llamamos la función que queremos hacer
-//<button onclick="intentoDeUsuario();" de esta forma se declaró en HTML
-
 let numeroSecreto = 0;
 let intentos = 0;
 let listaDeNumerosSorteados = [];
@@ -90,7 +74,7 @@ function generarNumeroSecreto() {
 }
 
 function condicionesIniciales(){
-    asignarTextoElemento("h1", "Juego del número secreto perros");
+    asignarTextoElemento("h1", "Juego: Adivina el número secreto");
     asignarTextoElemento("p", `Indica un numero de 1 al ${numeroMaximo}`);
     numeroSecreto = generarNumeroSecreto();
     intentos = 1;
