@@ -22,7 +22,7 @@ function verificarIntento() {
  
     if (numerosDeUsuario === numeroSecreto) {
         //El usiario acierta el número secreto
-        asignarTextoElemento("p", `Acertaste el número en ${intentos} ${(intentos === 1) ? "Intento" : "Intentos"}`);
+        asignarTextoElemento("p", `Acertaste el número secreto en ${intentos} ${(intentos === 1) ? "Intento" : "Intentos"}`);
 
         //Habilitamos el otro boton, deshabilitando atributo
         document.getElementById("reiniciar").removeAttribute("disabled");
